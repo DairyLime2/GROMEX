@@ -2,10 +2,6 @@
 
 Sistema web local para automatizar cotizaciones, cálculo de materiales, control de inventario y seguimiento de producción de block.
 
-## Uso
-
-Abre `index.html` en un navegador moderno. Los cambios se guardan automáticamente en el almacenamiento local del navegador.
-
 ## Módulos incluidos
 
 - Resumen operativo con ventas, inventario, alertas y producción semanal.
