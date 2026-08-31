@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0879bd" />
+  <title>CC GROMEX · Sistema integral</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><img src="assets/logo-gromex.png" alt="GROMEX" /><div><strong>CC GROMEX</strong><small>Control operativo</small></div></div>
+    <div class="nav-section">GENERAL</div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="dashboard"><span>▦</span> Resumen</button>
+      <button class="nav-item" data-view="quotes"><span>▤</span> Cotizaciones <b id="quoteBadge">0</b></button>
+      <button class="nav-item" data-view="tracking"><span>◫</span> Seguimiento</button>
+      <button class="nav-item" data-view="clients"><span>♙</span> Clientes</button>
+      <button class="nav-item" data-view="suppliers"><span>♜</span> Proveedores</button>
+      <div class="nav-section">OPERACIÓN</div>
+      <button class="nav-item" data-view="catalog"><span>▧</span> Productos y fórmulas</button>
+      <button class="nav-item" data-view="inventory"><span>▥</span> Inventario</button>
+      <button class="nav-item" data-view="production"><span>◩</span> Producción</button>
+      <button class="nav-item" data-view="reports"><span>⌁</span> Reportes</button>
+      <div class="nav-section">SISTEMA</div>
+      <button class="nav-item admin-only" data-view="admin"><span>⚙</span> Administración</button>
+    </nav>
+    <button class="user-card" id="userCard"><span class="avatar" id="userInitials">CA</span><span><strong id="userName">Cesar Aquino</strong><small id="userRole">Administrador</small></span><i>⌄</i></button>
+  </aside>
+  <main>
+    <header>
+      <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+      <div class="title-block"><p id="pageEyebrow">OPERACIÓN GENERAL</p><h1 id="pageTitle">Resumen</h1></div>
+      <div class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Buscar cotización, cliente o material…" /></div>
+      <button class="primary" id="newQuoteTop">＋ Nueva cotización</button>
+    </header>
+    <section id="content" class="content"></section>
+  </main>
+  <div id="modalRoot"></div>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
